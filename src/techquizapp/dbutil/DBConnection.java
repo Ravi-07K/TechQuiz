@@ -21,7 +21,6 @@ public class DBConnection {
         try
         {
             Class.forName("oracle.jdbc.OracleDriver");
-            
             conn=DriverManager.getConnection("jdbc:oracle:thin:@//LAPTOP-MTSJP1BT:1521/XE", "advjavabatch", "oracle");
             JOptionPane.showMessageDialog(null, "Connected successfully to the DB");
             

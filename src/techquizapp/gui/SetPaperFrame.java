@@ -74,6 +74,11 @@ public class SetPaperFrame extends javax.swing.JFrame {
         jcLanguage.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jcLanguage.setForeground(new java.awt.Color(255, 102, 0));
         jcLanguage.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "java", "c", "c++", "python" }));
+        jcLanguage.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jcLanguageActionPerformed(evt);
+            }
+        });
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 102, 0));
@@ -237,6 +242,10 @@ public class SetPaperFrame extends javax.swing.JFrame {
        adminFrame.setVisible(true);
        this.dispose();
     }//GEN-LAST:event_btnBackActionPerformed
+
+    private void jcLanguageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcLanguageActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jcLanguageActionPerformed
 
     /**
      * @param args the command line arguments
